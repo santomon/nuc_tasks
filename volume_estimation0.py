@@ -15,9 +15,10 @@ shapes at different heights
 
 import cv2
 import numpy
-import pydicom
-import argparse
-#
+# import pydicom
+import argparse#
+
+
 def create_parser():
     """
     returns parser object,
