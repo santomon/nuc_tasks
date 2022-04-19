@@ -16,7 +16,7 @@ shapes at different heights
 import cv2
 import numpy
 # import pydicom
-import argparse#
+import argparse #
 
 
 def create_parser():
@@ -30,8 +30,8 @@ def create_parser():
     parser = argparse.ArgumentParser(description='Volume estimation from 2 orthogonal images')
     parser.add_argument('--im1', help='image 1')
     parser.add_argument('--im2', help='image 2')
-    parser.add_argument('-t', '--threshold', default=200, help='threshold value')
-    parser.add_argument('-m', '--ratio', default=1, help='millimeter to pixel ratio')
+    parser.add_argument('-t', '--threshold', default=200, type=float, help='threshold value')
+    parser.add_argument('-m', '--ratio', default=1, type=float, help='millimeter to pixel ratio')
     parser.add_argument('-d', '--draw', action='store_true', help='draw contours')
     return parser
 
